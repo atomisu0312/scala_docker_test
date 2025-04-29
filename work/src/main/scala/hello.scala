@@ -1,7 +1,11 @@
-object HelloWorld {
+object MyProgram:                                 
+  def abs(n: Int): Int =                          
+    if n < 0 then -n                              
+    else n
 
-  def main(args:Array[String]):Unit = {
-    println("Hello, World!")
-  }
-  
-}
+  private def formatAbs(x: Int) =              
+    val msg = "The absolute value of %d is %d"    
+    msg.format(x, abs(x))                         
+
+  @main def printAbs: Unit =                      
+    println(formatAbs(-42))
