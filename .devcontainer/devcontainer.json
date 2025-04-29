@@ -1,0 +1,6 @@
+{
+  "name": "App with Database",
+  "dockerComposeFile": "./compose.yml",
+  "workspaceFolder": "/usr/src/",
+  "service": "scala"
+}
