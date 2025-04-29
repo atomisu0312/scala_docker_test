@@ -1,7 +1,7 @@
 services:
   scala:
     container_name: scala
-    image: sbtscala/scala-sbt:eclipse-temurin-alpine-22_36_1.10.1_3.5.0
+    image: sbtscala/scala-sbt:eclipse-temurin-23.0.2_7_1.10.11_3.3.5
     working_dir: /usr/src
     volumes:
       - ../work/:/usr/src:delegated
