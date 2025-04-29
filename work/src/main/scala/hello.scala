@@ -1,11 +1,13 @@
-object MyProgram:                                 
+object MyProgram {                                 
   def abs(n: Int): Int =                          
-    if n < 0 then -n                              
+    if (n < 0) -n                              
     else n
 
-  private def formatAbs(x: Int) =              
+  private def formatAbs(x: Int): String = {              
     val msg = "The absolute value of %d is %d"    
     msg.format(x, abs(x))                         
+  }
 
-  @main def printAbs: Unit =                      
+  def main(args: Array[String]): Unit =                      
     println(formatAbs(-42))
+}

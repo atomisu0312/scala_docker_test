@@ -1,6 +1,6 @@
-object MyProgram:                                              
+object VarTest {                                              
 
-  @main def printAbs: Unit =  {
+  def main(args: Array[String]): Unit =  {
     var myvar : Int = 15; // valだとイミュータブルなので、次の値をアサインする段階で例外を出す
     println(myvar)
 
@@ -8,3 +8,4 @@ object MyProgram:
 
     println(myvar)
   }
+}
