@@ -2,5 +2,19 @@
   "name": "App with Database",
   "dockerComposeFile": "./compose.yml",
   "workspaceFolder": "/usr/src/",
-  "service": "scala"
+  "service": "scala",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "taichi.vscode-textlint",
+        "DavidAnson.vscode-markdownlint",
+        "hediet.vscode-drawio",
+        "bierner.markdown-mermaid",
+        "scala-lang.scala",
+        "scalameta.metals",
+        "scala-lang.scala-snippets"
+      ],
+      "settings": {}
+    }
+  },
 }

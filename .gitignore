@@ -3,3 +3,8 @@ target
 project
 
 **/.scala-build
+**/.bloop
+**/.metals
+**/.vscode
+**/.idea
+**/.vscode-test
