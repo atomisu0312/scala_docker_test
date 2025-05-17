@@ -4,7 +4,7 @@ object QuizCh10Int {
     (((a + b) / c)* a)
   }
 
-  def main(args: Array[String]): Unit =  {
+  @main def write(): Unit =  {
     var a : Int = 5;
     var b : Int = 25;
     var c : Int = 6;

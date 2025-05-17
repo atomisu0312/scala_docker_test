@@ -5,5 +5,11 @@ lazy val root = project
   .settings(
     name := "scala-test",
     version := "0.1.0-SNAPSHOT",
-    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test
+    scalaVersion := scala3Version, 
+    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test,
+    semanticdbEnabled := true,
+    scalacOptions ++= Seq(
+      "-Yrangepos",
+      "-language:implicitConversions"
+    )
   )
